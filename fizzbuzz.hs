@@ -67,7 +67,7 @@ ninish = head $ map (\(a, b, c)-> a * b *c) ninishHelp
 
 
 --10 sum of all primes below two million
-tenish = sum $ primesTill 2000000
+tenish = sum $ primesTil 2000000
 
 primesTill m = 2 : sieve [3, 5 .. m]
     where
